@@ -13,7 +13,9 @@ https://hell-bnb.vercel.app/
 - Salvatore Corsaro
 
 ---
-
+![activity page](https://user-images.githubusercontent.com/48923975/117958558-6c749280-b31b-11eb-9792-2cf5890d5bc5.PNG)
+![activity page2](https://user-images.githubusercontent.com/48923975/117958561-6da5bf80-b31b-11eb-8bca-e80e5c2a0da0.PNG)
+![home](https://user-images.githubusercontent.com/48923975/117958564-6e3e5600-b31b-11eb-9d1b-df952aac6e39.PNG)
 ## Available Scripts
 
 In the project directory, you can run:
