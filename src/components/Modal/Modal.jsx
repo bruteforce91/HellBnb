@@ -85,7 +85,7 @@ function Modal({ ModalIsOpen, toggleModal, slides }) {
                           );
 
                           setCurrent(findIndex);
-                        }, 1000);
+                        }, 50);
                       }}
                     />
                   ) : (

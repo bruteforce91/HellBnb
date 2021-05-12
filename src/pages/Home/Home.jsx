@@ -6,7 +6,6 @@ import {
   fetchActivityByUuid,
 } from "../../services/api";
 import CarouselActivities from "../../components/CarouselActivities/CarouselActivities";
-import CarouselCities from "../../components/CarouselCities/CarouselCities";
 import Layout from "../../components/Layout/Layout";
 import { WrapGeneric } from "../../components/Layout/Layout.element";
 
@@ -63,7 +62,7 @@ function Home() {
             title="Esperienze simili"
           />
         )}
-        {cities && <CarouselCities cities={cities} />}
+        {cities && <CarouselActivities cities={cities} />}
         {filterActivities && (
           <CarouselActivities
             activities={filterActivities}

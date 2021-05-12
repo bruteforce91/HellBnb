@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { Link } from "react-router-dom";
 import device from "../../assets/breakpoints";
 import colors from "../../assets/colors";
@@ -19,13 +19,29 @@ export const StyledLink = styled(Link)`
 `;
 
 export const HeaderCarousel = styled.div`
-  display: flex;
-  justify-content: space-between;
   margin-bottom: 10px;
+  max-height: 30px;
+  ${(props) =>
+    props.activity &&
+    css`
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    `}
 `;
 
 export const NavigatorCarousel = styled.div`
   display: flex;
+  ${(props) =>
+    props.cities &&
+    css`
+      display: flex;
+      z-index: 5;
+      position: relative;
+      top: 100px;
+      justify-content: space-between;
+      margin: 0px -17px 0px -17px;
+    `}
 `;
 
 export const CounterSlide = styled.p`
@@ -51,6 +67,12 @@ export const NavBtn = styled.button`
   padding-left: ${(props) => (props.left ? "3px" : "5.5px")};
   padding-bottom: 5px;
   cursor: pointer;
+  visibility: ${(props) => (props.show ? "visible" : "hidden")};
+  ${(props) =>
+    props.cities &&
+    css`
+      margin-right: 10px;
+    `}
 
   :focus {
     outline: none;
@@ -70,7 +92,7 @@ export const CarouselTitle = styled.h3`
 export const WrapperCarousel = styled.div`
   display: flex;
   height: fit-content;
-  max-width: 100%;
+  width: 100%;
   overflow-x: scroll;
   scroll-behavior: smooth;
   overflow-y: hidden;

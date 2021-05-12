@@ -33,7 +33,7 @@ const ActivityCard = ({
       </RankCountryWrapper>
       <Title>{title}</Title>
       <Detail>
-        <Bold>A partire da {price}€</Bold> a persona
+        <Bold>A partire da {price}</Bold> a persona
       </Detail>
     </TextWrapper>
   </CardWrapper>
